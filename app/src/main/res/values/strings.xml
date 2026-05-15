@@ -10,13 +10,14 @@
     <string name="refresh_now">Refresh now</string>
     <string name="settings_title">Settings</string>
     <string name="onboarding_title">StartScope</string>
-    <string name="onboarding_body">This app needs Usage access (Android 15) so the system exposes process start history to StartScope. Nothing is uploaded: there is no network permission.</string>
+    <string name="onboarding_body">Grant Usage access (Android 15) so background collection can run. The system only exposes ApplicationStartInfo for StartScope itself to normal apps, not for YouTube or other installed apps. Nothing is uploaded: there is no network permission.</string>
     <string name="onboarding_requirement">Requires Android 15 (API 35) or newer.</string>
     <string name="open_usage_settings">Open Usage access settings</string>
     <string name="continue_label">Continue</string>
     <string name="empty_timeline_title">Collecting first starts</string>
-    <string name="empty_timeline_body">Grant Usage access, then use other apps. History appears here when the system reports starts (polling when idle and live completions).</string>
+    <string name="empty_timeline_body">Grant Usage access, then open StartScope from the launcher a few times. History lists this app\'s starts only; Android does not let store apps read other apps\' startup records.</string>
     <string name="filter_all_apps">All apps</string>
+    <string name="timeline_scope_note">Startup detail here is only for StartScope. Other apps (for example YouTube) are not visible to this API on consumer builds.</string>
     <string name="start_type_cold">Cold</string>
     <string name="start_type_warm">Warm</string>
     <string name="start_type_hot">Hot</string>

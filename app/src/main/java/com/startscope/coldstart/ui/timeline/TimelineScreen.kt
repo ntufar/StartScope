@@ -105,6 +105,14 @@ fun TimelineScreen(
                 )
             }
         }
+        Text(
+            text = stringResource(R.string.timeline_scope_note),
+            style = MaterialTheme.typography.bodySmall,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 16.dp, vertical = 4.dp),
+        )
 
         if (sections.isEmpty()) {
             Column(
