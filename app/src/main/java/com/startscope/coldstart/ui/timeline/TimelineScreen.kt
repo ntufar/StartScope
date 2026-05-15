@@ -165,7 +165,7 @@ private fun StartRow(
     val time = timeFmt.format(Instant.ofEpochMilli(start.timestampMs))
     val typeLabel = StartTypeStrings.label(context, start.startType)
     val reason = StartReasonStrings.label(context, start.reason)
-    val ttid = start.ttidMs?.let { context.getString(R.string.ms_suffix, it) } ?: stringResource(R.string.na)
+    val ttid = start.ttidMs?.let { stringResource(R.string.ms_suffix, it) } ?: stringResource(R.string.na)
     Row(
         modifier = Modifier
             .fillMaxWidth()

@@ -123,7 +123,7 @@ private fun RecentRow(entity: StartEntity, pm: PackageManager) {
         )
         Text(
             StartTypeStrings.label(context, entity.startType) + " · " +
-                (entity.ttidMs?.let { context.getString(R.string.ms_suffix, it) } ?: stringResource(R.string.na)),
+                (entity.ttidMs?.let { stringResource(R.string.ms_suffix, it) } ?: stringResource(R.string.na)),
             style = MaterialTheme.typography.bodySmall,
         )
         Text(
