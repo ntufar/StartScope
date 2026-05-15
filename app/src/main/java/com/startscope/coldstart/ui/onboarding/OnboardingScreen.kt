@@ -1,6 +1,7 @@
 package com.startscope.coldstart.ui.onboarding
 
 import android.content.Intent
+import android.net.Uri
 import android.provider.Settings
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -70,7 +71,13 @@ fun OnboardingScreen(
         Spacer(Modifier.height(32.dp))
         Button(
             onClick = {
-                context.startActivity(Intent(Settings.ACTION_USAGE_ACCESS_SETTINGS))
+                val pkg = context.packageName
+                val targeted = Intent(Settings.ACTION_USAGE_ACCESS_SETTINGS).apply {
+                    data = Uri.parse("package:$pkg")
+                }
+                runCatching { context.startActivity(targeted) }.onFailure {
+                    context.startActivity(Intent(Settings.ACTION_USAGE_ACCESS_SETTINGS))
+                }
             },
         ) {
             Text(stringResource(R.string.open_usage_settings))
