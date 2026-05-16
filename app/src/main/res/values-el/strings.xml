@@ -17,6 +17,7 @@
     <string name="empty_timeline_title">Συλλογή πρώτων εκκινήσεων</string>
     <string name="empty_timeline_body">Δώστε πρόσβαση χρήσης και χρησιμοποιήστε άλλες εφαρμογές. Το ιστορικό εμφανίζεται όταν το σύστημα αναφέρει εκκινήσεις.</string>
     <string name="filter_all_apps">Όλες οι εφαρμογές</string>
+    <string name="timeline_scope_note">Οι λεπτομέρειες εκκίνησης εδώ αφορούν μόνο το StartScope. Άλλες εφαρμογές (π.χ. YouTube) δεν είναι ορατές σε αυτό το API σε καταναλωτικές εκδόσεις.</string>
     <string name="start_type_cold">Ψυχρή</string>
     <string name="start_type_warm">Ζεστή</string>
     <string name="start_type_hot">Καυτή</string>
